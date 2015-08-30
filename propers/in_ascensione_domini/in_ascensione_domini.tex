@@ -1,0 +1,73 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+% usual packages loading:
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{fullpage} % to reduce the margins
+
+\begin{document}
+\begin{center}\begin{huge}\textsc{IN ASCENSIONE DOMINI}\end{huge}\end{center}
+
+\setspaceafterinitial{3.2mm plus 0em minus 0em}
+\setspacebeforeinitial{3.2mm plus 0em minus 0em}
+
+\def\greinitialformat#1{%
+{\fontsize{34}{34}\selectfont #1}%
+}
+
+\setfirstannotation{\small \textsc{\textbf{Intr.}}}
+\setsecondannotation{\small \textsc{\textbf{7.}}}
+\includescore{in--viri_galilaei--solesmes.tex}
+\textbf{(Acts 1. 11)} Ye men of Galilee, why wonder you, looking up to heaven? alleluia.  He shall so come as you have seen Him going up into heaven, alleluia, alleluia, alleluia. \emph{Ps. 44. 2.} O clap your hands, all ye nations, shout unto God, with the voice of exultation.
+
+\vskip10pt
+
+\emph{Kyrie and Gloria from Mass I (Lux et origo)}
+
+\emph{Collect and Lesson}
+
+\vskip10pt
+
+\setfirstannotation{\small \textsc{\textbf{4.}}}
+\includescore{al--ascendit_deus--solesmes.tex}
+\textbf{(Ps. 46. 6)} God is ascended with jubilee, and the Lord with the sound of a trumpet.
+
+\vskip10pt
+
+\setfirstannotation{\small \textsc{\textbf{8.}}}
+\includescore{al--dominus_in_sina--solesmes.tex}
+\textbf{(Ps. 67. 18, 19)} The Lord is in Sinai, in the holy place; ascending on high He hath led captivity captive.
+
+\vskip10pt
+
+\emph{Gospel}
+
+\emph{Credo IV}
+
+\vskip20pt
+
+\setfirstannotation{\small \textsc{\textbf{Offert.}}}
+\setsecondannotation{\small \textsc{\textbf{1.}}}
+\includescore{of--ascendit_deus--solesmes.tex}
+
+\textbf{(Ps. 46. 6)} God is ascended with jubilee, and the Lord with the sound of a trumpet, alleluia.
+
+\vskip10pt
+
+\emph{Sanctus and Agnus Dei from Mass I (Lux et origo)}
+
+\vskip20pt
+
+\setfirstannotation{\small \textsc{\textbf{Comm.}}}
+\setsecondannotation{\small \textsc{\textbf{1.}}}
+\includescore{co--psallite_domino--solesmes.tex}
+
+\textbf{(Ps. 67. 33, 34)} Sing ye to the Lord, who mounteth above the heaven of heavens to the East, alleluia.
+
+\end{document}

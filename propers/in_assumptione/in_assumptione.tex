@@ -1,0 +1,74 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+% usual packages loading:
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{fullpage} % to reduce the margins
+
+\begin{document}
+\begin{center}\begin{huge}\textsc{IN ASSUMPTIONE BEATAE MARIAE VIRGINIS}\end{huge}\end{center}
+
+\setspaceafterinitial{3.2mm plus 0em minus 0em}
+\setspacebeforeinitial{3.2mm plus 0em minus 0em}
+
+\def\greinitialformat#1{%
+{\fontsize{34}{34}\selectfont #1}%
+}
+
+\setfirstannotation{\small \textsc{\textbf{Intr.}}}
+\setsecondannotation{\small \textsc{\textbf{7.}}}
+\includescore{in--signum_magnum--solesmes.tex}
+\textbf{(Apoc. 12. 1)} A great sign appeared in heaven: a woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars. \emph{Ps. 97. 1.} Sign ye to the Lord a new canticle: because He hath done wonderful things.
+
+\vskip10pt
+
+\emph{Kyrie and Gloria from} Missa ``Salve Regina''
+
+\emph{Collect and Lesson}
+
+\vskip10pt
+
+\setfirstannotation{\small \textsc{\textbf{Grad.}}}
+\setsecondannotation{\small \textsc{\textbf{7.}}}
+\includescore{gr--audi_filia_et_concupiscet--solesmes.tex}
+\textbf{(Ps. 44. 11, 12, 14)} Hearken, O daughter, and see, and incline thy ear. And the king shall greatly desire thy beauty. \Vbar{}. All the glory of the king's daughter is within in golden borders.
+
+\vskip10pt
+
+\setfirstannotation{\small \textsc{\textbf{5.}}}
+\includescore{al--assumpta_est--solesmes.tex}
+Mary is taken up into heaven: the host of Angels rejoice.
+
+\vskip10pt
+
+\emph{Gospel}
+
+\emph{Credo}
+
+\vskip10pt
+
+\setfirstannotation{\small \textsc{\textbf{Offert.}}}
+\setsecondannotation{\small \textsc{\textbf{2.}}}
+\includescore{of--inimicitias_ponam--solesmes.tex}
+
+\textbf{(Gen. 3. 15)} I will put enmities between thee and the woman, and thy seed and her seed.
+
+\vskip10pt
+
+\emph{Sanctus and Agnus Dei from} Missa ``Salve Regina''
+
+\vskip10pt
+
+\setfirstannotation{\small \textsc{\textbf{Comm.}}}
+\setsecondannotation{\small \textsc{\textbf{6.}}}
+\includescore{co--beatam_me_dicent--solesmes.tex}
+
+\textbf{(Lk. 1. 48-49)} All generations shall call me blessed, because He that is mighty hath done great things to me.
+
+\end{document}
