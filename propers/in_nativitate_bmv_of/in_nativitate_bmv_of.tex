@@ -1,0 +1,50 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+% usual packages loading:
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage{fullpage} % to reduce the margins
+\usepackage{tabularx}
+
+\begin{document}
+\begin{center}\begin{huge}
+  \textsc{In Nativitate Beatae Mariae Virginis}
+\end{huge}\end{center}
+
+\def\greinitialformat#1{%
+  {\fontsize{34}{34}\selectfont #1}%
+}
+
+\setfirstannotation{\small \textbf{Intr.}}
+\setsecondannotation{\small \textbf{3.}}
+\includescore[a]{in--gaudeamus_mariae_festivitate--solesmes.gabc}
+\textbf{ref}. translation \emph{ref}. translation
+
+\setfirstannotation{\small \textbf{Grad.}}
+\setsecondannotation{\small \textbf{5.}}
+\includescore[a]{gr--benedicta_et_venerabilis--solesmes.gabc}
+\textbf{ref}. translation \Vbar{}. translation
+
+\vskip10pt
+
+\setfirstannotation{\small \textbf{1.}}
+\includescore[a]{al--solemnitas--solesmes.gabc}
+\textbf{ref}. translation
+
+\setfirstannotation{\small \textbf{Offert.}}
+\setsecondannotation{\small \textbf{8.}}
+\includescore[a]{of--beata_es_virgo--solesmes.gabc}
+\textbf{ref}. translation
+
+\setfirstannotation{\small \textbf{Comm.}}
+\setsecondannotation{\small \textbf{8.}}
+\includescore[a]{co--beatam_me_dicent--solesmes.gabc}
+\textbf{ref}. translation
+
+\end{document}
