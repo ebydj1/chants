@@ -1,0 +1,70 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+% usual packages loading:
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
+\usepackage{fullpage} % to reduce the margins
+\usepackage{tabularx}
+
+\begin{document}
+\begin{center}\begin{huge}
+  \textsc{In Nativitate Domini}
+  \emph{Missa In Die}
+\end{huge}\end{center}
+
+\gregorioscore{in--puer_natus_est--solesmes}
+\textbf{Something?}. Something
+\emph{Something}. Something
+
+\vskip10pt
+
+\textsc{Collect}. Something \Rbar{}. Amen.
+
+\vskip10pt
+  
+\textsc{Epistle}. \textit{Something.} Something
+
+\vskip10pt
+
+\gregorioscore{gr--viderunt_omnes--solesmes}
+
+\textbf{Something?}. Something \Vbar{}. Something
+
+\vskip10pt
+
+\gregorioscore{al--dies_sanctificatus--solesmes}
+
+\textbf{Something?}. Something
+
+\vskip10pt
+  
+\textsc{Gospel}. \textit{Something.} Something
+
+\begin{center}\textsc{Credo}\end{center}
+
+\gregorioscore{of--tui_sunt_caeli--solesmes}
+
+\textbf{Something?}. Something
+
+\vskip10pt
+
+\textsc{Secret}. Something
+
+\begin{center}\textsc{Sanctus}\end{center}
+\begin{center}\textsc{Agnus Dei}\end{center}
+
+\gregorioscore{co--viderunt_omnes--solesmes}
+
+Something
+
+\vskip10pt
+
+\textsc{Post-Communion}. Something \Rbar{}. Amen.
+
+\end{document}
