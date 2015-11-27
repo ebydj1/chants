@@ -4,3 +4,5 @@
 *.log
 *aux
 *.old
+*.synctex.gz
+*.swp
