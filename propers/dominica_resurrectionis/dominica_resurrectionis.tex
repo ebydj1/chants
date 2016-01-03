@@ -12,6 +12,13 @@
 \geometry{letterpaper} % or letterpaper (US) or a5paper or....
 \usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
 \usepackage{fullpage} % to reduce the margins
+\usepackage{scrextend}
+
+\newcommand{\mref}{\textbf}
+\newcommand{\vref}{\emph}
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
 
 % to change the font to something better, you can install the kpfonts package (if not already installed). To do so
 % go open the "TeX Live Manager" in the Menu Start->All Programs->TeX Live 2010
@@ -24,7 +31,12 @@
 \end{huge}\end{center}
 
 \gregorioscore{in--resurrexi--solesmes}
-\textbf{(Ps. 138. 18, 5, 6)} I arose, and am still with Thee, alleluia; Thou hast laid Thy hand upon Me, alleluia; Thy knowledge is become wonderful, alleluia, alleluia. \emph{Ps. ibid. 1, 2.} Lord, Thou hast searched Me, and known Me; Thou knowest My sitting down and My rising up.
+\begin{translation}
+  \mref{Ps.~138.~18,~5,~6.} I arose, and am still with Thee, alleluia; Thou hast
+  laid Thy hand upon Me, alleluia; Thy knowledge is become wonderful, alleluia,
+  alleluia. \vref{Ps.~ibid.~1,~2.} Lord, Thou hast searched Me, and known Me;
+  Thou knowest My sitting down and My rising up.
+\end{translation}
 
 \vskip10pt
 
@@ -35,44 +47,62 @@
 \vskip10pt
 
 \gregorioscore{gr--haec_dies__confitemini--solesmes}
-\textbf{(Ps. 117. 24, 1)} This is the day which the Lord hath made: let us rejoice and be glad in it. \Vbar{}. Give praise unto the Lord, for He is good: for His mercy endureth for ever.
+\begin{translation}
+  \mref{Ps.~117.~24,~1.} This is the day which the Lord hath made: let us
+  rejoice and be glad in it. \Vbar{}. Give praise unto the Lord, for He is good:
+  for His mercy endureth for ever.
+\end{translation}
 
 \vskip20pt
 
 \gregorioscore{al--pascha_nostrum--solesmes}
-\textbf{(1 Cor. 5. 7)} Christ our Pasch is sacrificed.
+\begin{translation}
+  \mref{1~Cor.~5.~7.} Christ our Pasch is sacrificed.
+\end{translation}
 
-Allelúia. \emph{is not repeated, but the Sequence is then said :}
+Allelúia.~\emph{is not repeated, but the Sequence is then said :}
 \vskip10pt
 
 \gregorioscore{se--victimae_paschali--solesmes}
 
-Christians! to the Paschal Victim offer your thankful praises.
+\begin{translation}
+  Christians! to the Paschal Victim offer your thankful praises.
 
-The Lamb the sheep redeemeth: Christ, who only is sinless, reconcileth sinners to the Father.
+  The Lamb the sheep redeemeth: Christ, who only is sinless, reconcileth sinners
+  to the Father.
 
-Death and life have contended in that conflict stupendous: the Prince of Life, who died, deathless reigneth.
+  Death and life have contended in that conflict stupendous: the Prince of Life,
+  who died, deathless reigneth.
 
-Speak, Mary, declaring what thou sawest wayfaring.
+  Speak, Mary, declaring what thou sawest wayfaring.
 
-``The tomb of Christ who now liveth: and likewise the glory of the Risen.
+  ``The tomb of Christ who now liveth: and likewise the glory of the Risen.
 
-Bright angels attesting, the shroud and napkin resting.
+  Bright angels attesting, the shroud and napkin resting.
 
-Yea, Christ my hope is arisen: to Galilee He goeth before you.''
+  Yea, Christ my hope is arisen: to Galilee He goeth before you.''
 
-We know that Christ is risen, henceforth ever living: Have mercy, Victor King, pardon giving.
+  We know that Christ is risen, henceforth ever living: Have mercy, Victor King,
+  pardon giving.
+\end{translation}
 
 \vskip10pt
 \emph{Gospel}
 \vskip20pt
 
 \gregorioscore{of--terra_tremuit--solesmes}
-\textbf{(Ps. 95. 9, 10)} The earth trembled and was still when God arose in judgment, alleluia.
+\begin{translation}
+  \mref{Ps.~95.~9,~10.} The earth trembled and was still when God arose in
+  judgment, alleluia.
+\end{translation}
 
 \vskip10pt
 
 \gregorioscore{co--pascha_nostrum--solesmes}
-\textbf{(1 Cor. 5. 7, 8)} Christ our Pasch is sacrificed, alleluia: therefore let us feast with the unleavened bread of sincerity and truth, alleluia, alleluia, alleluia.
+\begin{translation}
+  \mref{1~Cor.~5.~7,~8.} Christ our Pasch is sacrificed, alleluia: therefore
+  let us feast with the unleavened bread of sincerity and truth, alleluia,
+  alleluia, alleluia.
+\end{translation}
 
 \end{document}
