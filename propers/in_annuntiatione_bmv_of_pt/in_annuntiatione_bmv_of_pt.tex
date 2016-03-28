@@ -1,0 +1,83 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+% This is a simple template for a LuaLaTeX document using gregorio scores.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+% usual packages loading:
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
+\usepackage{fullpage} % to reduce the margins
+\usepackage{scrextend}
+\usepackage{multicol}
+
+\newcommand{\mref}{\textbf}
+\newcommand{\vref}{\emph}
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
+
+% to change the font to something better, you can install the kpfonts package (if not already installed). To do so
+% go open the "TeX Live Manager" in the Menu Start->All Programs->TeX Live 2010
+
+% here we begin the document
+\begin{document}
+
+\begin{center}\begin{huge}
+  \textsc{In Annuntiatione Beatae Mariae Virginis}
+\end{huge}\end{center}
+
+\begin{center}\begin{huge}
+  In Tempora Paschalis
+\end{huge}\end{center}
+
+\begin{center}\begin{large}
+  In Forma Ordinaria
+\end{large}\end{center}
+
+\gregorioscore{in--rorate_ps_caeli_enarrant--solesmes}
+\begin{translation}
+  \mref{Is 45:8.} Drop down dew from above, you heavens, and let the clouds rain
+  down the Just one; let the earth be opened and bring forth a Saviour.
+  \vref{Ps 18:2.} The heavens declare the glory of God, and the firmament
+  proclaims the work of his hands.
+\end{translation}
+
+\vskip10pt
+
+\gregorioscore{al--ave_maria--solesmes}
+\begin{translation}
+  \mref{Lk 1:28.} Hail Mary, full of grace, the Lord is with thee; blessed art
+  thou amongst women.
+\end{translation}
+
+\vskip10pt
+
+\gregorioscore{al--virga_jesse--solesmes}
+\begin{translation}
+  \mref{Cf. Num. 17:8.} The rod of Jesse has put forth buds, the Virgin has
+  given birth to the God-Man; God has re-established peace; in himself, he has
+  reconciled earth and heaven.
+\end{translation}
+
+\vskip10pt
+
+\gregorioscore{of--ave_maria_et_benedictus--solesmes}
+\begin{translation}
+  \mref{Lk 1:28, 42.} Hail Mary, full of grace, the Lord is with thee. Blessed
+  art thou amongst women, and blessed is the fruit of thy womb.
+\end{translation}
+
+\vskip10pt
+
+\gregorioscore{co--ecce_virgo--solesmes}
+\begin{translation}
+  \mref{Is 7:14.} Behold, a Virgin shall conceive and bear a son; and his name
+  will be called Emmanuel.
+\end{translation}
+
+\end{document}
