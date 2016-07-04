@@ -8,66 +8,140 @@
 \usepackage{graphicx} % support the \includegraphics command and options
 \usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper} % or letterpaper (US) or a5paper or....
-\usepackage{gregoriotex} % for gregorio score inclusion
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
 \usepackage{fullpage} % to reduce the margins
+\usepackage{scrextend}
+\usepackage{paracol}
+
+\newcommand{\mref}{\textbf}
+\newcommand{\vref}{\emph}
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
 
 \begin{document}
+
 \begin{center}\begin{huge}
   \textsc{In Assumptione Beatae Mariae Virginis}
 \end{huge}\end{center}
 
-\def\greinitialformat#1{%
-  {\fontsize{34}{34}\selectfont #1}%
-}
+\gregorioscore{in--signum_magnum--solesmes}
+\begin{translation}
+  \mref{Apoc. 12. 1.} A great sign appeared in heaven: a woman clothed with the
+  sun, and the moon under her feet, and on her head a crown of twelve stars.
+  \vref{Ps. 97. 1.} Sing ye to the Lord a new canticle: because He hath done
+  wonderful things.
+\end{translation}
 
-\setfirstannotation{\small \textbf{Intr.}}
-\setsecondannotation{\small \textbf{7.}}
-\includescore[a]{in--signum_magnum--solesmes.gabc}
-\textbf{(Apoc. 12. 1)}. A great sign appeared in heaven: a woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars. \emph{Ps. 97. 1.} Sign ye to the Lord a new canticle: because He hath done wonderful things.
+\begin{center}\emph{Collect}\end{center}
 
-\vskip10pt
+\begin{paracol}{2}
+  \noindent Omnipotens sempiterne Deus, que Immaculatam Virginem Mariam, Filii
+  tui Genitricem, corpore et anima ad cælestem gloriam assumpsisti: concede,
+  quæsumus; ut ad superna semper intenti, ipsius gloriæ mereamur esse consortes.
 
-\emph{Kyrie and Gloria from} Missa ``Salve Regina''
+  \switchcolumn
+  
+  \noindent English
+\end{paracol}
 
-\emph{Collect and Lesson}
+\begin{center}\emph{Lesson: Judith 13, 22-25; 15, 10.}\end{center}
 
-\vskip10pt
+\begin{paracol}{2}
+  \noindent Benedixit te Dominus in virtute sua, quia per te ad nihilum redegit
+  inimicos nostros. Benedicta es tu, filia, a Domino Deo excelso, præ omnibus
+  mulieribus super terram. Benedictus Dominus, qui creavit cælum et terram, qui
+  te direxit in vulnera capitis principis inimicorum nostrorum; quia hodie nomen
+  tuum ita magnificavit, ut non recedat laus tua de ore hominum, qui memores
+  fuerint virtutis Domini in æternum, pro quibus non pepercisti animæ tuæ
+  propter angustias et tribulationem generis tui, sed subvenisti ruinæ ante
+  conspectum Dei nostri. Tu gloria Jerusalem, tu lætitia Israel, tu
+  honorificentia populi nostri.
 
-\setfirstannotation{\small \textbf{Grad.}}
-\setsecondannotation{\small \textbf{7.}}
-\includescore[a]{gr--audi_filia_et_concupiscet--solesmes.gabc}
-\textbf{(Ps. 44. 11, 12, 14)}. Hearken, O daughter, and see, and incline thy ear. And the king shall greatly desire thy beauty. \Vbar{}. All the glory of the king's daughter is within in golden borders.
+  \switchcolumn
 
-\vskip10pt
-
-\setfirstannotation{\small \textbf{5.}}
-\includescore[a]{al--assumpta_est--solesmes.gabc}
-Mary is taken up into heaven: the host of Angels rejoice.
-
-\vskip10pt
-
-\emph{Gospel}
-
-\emph{Credo}
-
-\vskip10pt
-
-\setfirstannotation{\small \textbf{Offert.}}
-\setsecondannotation{\small \textbf{2.}}
-\includescore[a]{of--inimicitias_ponam--solesmes.gabc}
-
-\textbf{(Gen. 3. 15)}. I will put enmities between thee and the woman, and thy seed and her seed.
+  \noindent English
+\end{paracol}
 
 \vskip10pt
 
-\emph{Sanctus and Agnus Dei from} Missa ``Salve Regina''
+\gregorioscore{gr--audi_filia_et_concupiscet--solesmes}
+\begin{translation}
+  \mref{Ps.~44.~11, 12, 14.} Hearken, O daughter, and see, and incline thy ear.
+  And the king shall greatly desire thy beauty. \Vbar{}. All the glory of the
+  king's daughter is within in golden borders.
+\end{translation}
+
+\vskip20pt
+
+\gregorioscore{al--assumpta_est--solesmes}
+\begin{translation}
+  Mary is taken up into heaven: the host of Angels rejoice.
+\end{translation}
 
 \vskip10pt
 
-\setfirstannotation{\small \textbf{Comm.}}
-\setsecondannotation{\small \textbf{6.}}
-\includescore[a]{co--beatam_me_dicent--solesmes.gabc}
+\begin{center}\emph{Gospel: Luc.~1, 41-50.}\end{center}
 
-\textbf{(Lk. 1. 48-49)}. All generations shall call me blessed, because He that is mighty hath done great things to me.
+\begin{paracol}{2}
+  \noindent In illo tempore: Repleta est Spiritu Sancto Elisabeth et exclamavit
+  voce magna, et dixit: Benedicta tu inter mulieres, et benedictus fructus
+  ventris tui. Et unde hoc mihi ut veniat mater Domini mei ad me? Ecce enim ut
+  facta est vox salutationis tuæ in auribus meis, exsultavit in gaudio infans in
+  utero meo. Et beata, quæ credidisti, quoniam perficientur ea, quæ dicta sunt
+  tibi a Domino. Et ait Maria: Magnificat anima mea Dominum; et exsultavit
+  spiritus meus in Deo salutari meo; quia respexit humilitatem ancillæ suæ, ecce
+  enim ex hoc beatam me dicent omnes generationes. Quia fecit mihi magna qui
+  potens est, et sanctum nomen ejus, et misericordia ejus a progenie in
+  progenies timentibus eum.
+
+  \switchcolumn
+
+  \noindent English
+\end{paracol}
+
+\vskip20pt
+
+\gregorioscore{of--inimicitias_ponam--solesmes}
+\begin{translation}
+  \mref{Gen. 3. 15.} I will put enmities between thee and the woman, and thy
+  seed and her seed.
+\end{translation}
+
+\vskip10pt
+
+\begin{center}\emph{Secret}\end{center}
+
+\begin{paracol}{2}
+  \noindent Ascendat ad te, Domine, nostræ devotionis oblatio, et, Beatissima
+  Virgine Maria in cælum assumpta intercedente, corda nostra, caritatis igne
+  successa, ad te jugiter adspirent.
+
+  \switchcolumn
+
+  \noindent English
+\end{paracol}
+
+\vskip10pt
+
+\gregorioscore{co--beatam_me_dicent--solesmes}
+\begin{translation}
+  \mref{Lk. 1. 48-49.} All generations shall call me blessed, because He that is
+  mighty hath done great things to me.
+\end{translation}
+
+\vskip10pt
+
+\begin{center}\emph{Postcommunion}\end{center}
+
+\begin{paracol}{2}
+  \noindent Sumptis, Domine, salutaribus sacramentis, da, quæsumus, ut, meritis
+  et intercessione Beatæ Virginis Mariæ in cælum assumptæ, ad resurrectionis
+  gloriam perducamur.
+
+  \switchcolumn
+
+  \noindent English
+\end{paracol}
 
 \end{document}
