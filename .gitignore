@@ -1,4 +1,5 @@
 *~
+*.glog
 *.gtex
 *.pdf
 *.log
