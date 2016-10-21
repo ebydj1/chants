@@ -9,111 +9,199 @@
 \usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
 \geometry{letterpaper} % or letterpaper (US) or a5paper or....
 \usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
-\usepackage{fullpage} % to reduce the margins
-\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{fullpage}
+\usepackage{scrextend}
+\usepackage{paracol}
+
+\newcommand{\mref}{\textbf}
+\newcommand{\vref}{\emph}
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
+\newenvironment{heading}
+  {\begin{center}\begin{em}}
+  {\end{em}\end{center}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textsc{In Nativitate Domini---In Die}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
+\setlength{\headsep}{6pt}
+\setlength{\columnseprule}{0.2pt}
+\colseprulecolor{gray}
 
 \begin{document}
+
+\thispagestyle{plain}
+
 \begin{center}\begin{huge}\textsc{In Nativitate Domini}\end{huge}\end{center}
 \begin{center}\begin{huge}\emph{Missa In Die}\end{huge}\end{center}
 
 \gregorioscore{in--puer_natus_est--solesmes}
-\textbf{Isaias 9.~6}. A child is born to us, and a Son is given to us: whose
-government is upon His shoulder: and His name shall be called, the Angel of
-great counsel. \emph{Ps.~97.~1}. Sing ye to the Lord a new canticle: because He
-hath done wonderful things.
+\begin{translation}
+  \mref{Isaias 9.~6}. A child is born to us, and a Son is given to us: whose
+  government is upon His shoulder: and His name shall be called, the Angel of
+  great counsel. \vref{Ps.~97.~1}. Sing ye to the Lord a new canticle: because
+  He hath done wonderful things.
+\end{translation}
 
-\vskip10pt
+\begin{heading}Collect\end{heading}
 
-\textsc{Collect}. Grant, we beseech Thee, almighty God, that the new birth of
-Thine only-begotten Son in the flesh may set us free, who are held by the old
-bondage under the yoke of sin. Through the same Jesus Christ our Lord, Thy Son,
-who liveth and reigneth with Thee, in the unity of the Holy Spirit, God, through
-all ages of ages. \Rbar{}. Amen.
+\begin{paracol}{2}
+  \noindent Concede, quaesumus, omnipotens Deus: ut nos Unigéniti tui nova per
+  carnem Nativitas liberet; quos sub peccati iugo vetusta servitus tenet.
 
-\vskip10pt
+  \switchcolumn
+
+  \noindent Grant, we beseech Thee, almighty God, that the new birth of Thine
+  only-begotten Son in the flesh may set us free, who are held by the old
+  bondage under the yoke of sin.
+\end{paracol}
+
+\begin{heading}Epistle: Hebr.~1.~1-12.\end{heading}
   
-\textsc{Epistle}. \textit{Hebr.~1.~1-12.} God, who, at sundry times and in
-divers manners, spoke in times past to the fathers by the prophets, last of all,
-in these days hath spoken to us by his Son, whom he hath appointed heir of all
-things, by whom also he made the world. Who being the brightness of his glory,
-and the figure of his substance, and upholding all things by the word of his
-power, making purgation of sins, sitteth on the right hand of the majesty on
-high. Being made so much better than the angels, as he hath inherited a more
-excellent name than they. For to which of the angels hath he said at any time,
-\emph{Thou art my Son, to day have I begotten thee?} And again, \emph{I will be 
-to him a Father, and he shall be to me a Son?} And again, when he bringeth in
-the first begotten into the world, he saith: \emph{And let all the angels of God
-adore him.} And to the angels indeed he saith: \emph{He that maketh his angels
-spirits, and his ministers a flame of fire.} But to the Son: \emph{Thy throne, O
-God, is for ever and ever: a sceptre of justice is the sceptre of thy kingdom.
-Thou hast loved justice, and hated iniquity: therefore God, thy God, hath
-anointed thee with the oil of gladness above thy fellows.} And: \emph{Thou in
-the beginning, O Lord, didst found the earth: and the works of thy hands are the
-heavens. They shall perish, but thou shalt continue: and they shall all grow old
-as a garment. And as a vesture shalt thou change them, and they shall be
-changed: but thou art the selfsame, and thy years shall not fail.}
+\begin{paracol}{2}
+  \noindent Multifariam, multisque modis olim Deus loquens patribus in
+  Prophetis: novissime diebus istis locutus est nobis in Filio, quem constituit
+  heredem universorum, per quem fecit et saecula: qui cum sit splendor gloriæ,
+  et figura substantia? eius, portansque omnia verbo virtutis suæ, purgationem
+  peccatorum faciens, sedet ad dexteram maiestatis in excelsis: tanto melior
+  Angelis effectus, quanto differentius præ illis nomen hereditavit. Cui enim
+  dixit aliquando Angelorum: Filius meus es tu, ego hodie genui te? Et rursum:
+  Ego ero illi in patrem, et ipse erit mihi in filium? Et cum iterum introducit
+  Primogenitum in orbem terræ, dicit: Et adorent eum omnes Angeli Dei. Et ad
+  Angelos quidem dicit: Qui facit Angelos suos spiritus, et ministros suos
+  flammam ignis. Ad Filium autem: Thronus tuus, Deus, in saeculum saeculi: virga
+  æquitatis, virga regni tui. Dilexisti iustitiam et odisti iniquitatem:
+  propterea unxit te Deus, Deus tuus, oleo exsultationis præ participibus tuis.
+  Et: Tu in principio, Domine, terram fundasti: et opera ma\-nu\-um tuarum sunt
+  coeli. Ipsi peribunt, tu autem permanebis; et omnes ut vestimentum
+  veterascent: et velut amictum mutabis eos, et mutabuntur: tu autem idem ipse
+  es, et anni tui non deficient.
+
+  \switchcolumn
+
+  \noindent God, who, at sundry times and in divers manners, spoke in times past
+  to the fathers by the prophets, last of all, in these days hath spoken to us
+  by his Son, whom he hath appointed heir of all things, by whom also he made
+  the world. Who being the brightness of his glory, and the figure of his
+  substance, and upholding all things by the word of his power, making purgation
+  of sins, sitteth on the right hand of the majesty on high. Being made so much
+  better than the angels, as he hath inherited a more excellent name than they.
+  For to which of the angels hath he said at any time, \emph{Thou art my Son, to
+  day have I begotten thee?} And again, \emph{I will be to him a Father, and he
+  shall be to me a Son?} And again, when he bringeth in the first begotten into
+  the world, he saith: \emph{And let all the angels of God adore him.} And to
+  the angels indeed he saith: \emph{He that maketh his angels spirits, and his
+  ministers a flame of fire.} But to the Son: \emph{Thy throne, O God, is for
+  ever and ever: a sceptre of justice is the sceptre of thy kingdom. Thou hast
+  loved justice, and hated iniquity: therefore God, thy God, hath anointed thee
+  with the oil of gladness above thy fellows.} And: \emph{Thou in the beginning,
+  O Lord, didst found the earth: and the works of thy hands are the heavens.
+  They shall perish, but thou shalt continue: and they shall all grow old as a
+  garment. And as a vesture shalt thou change them, and they shall be changed:
+  but thou art the selfsame, and thy years shall not fail.}
+\end{paracol}
 
 \vskip10pt
 
 \gregorioscore{gr--viderunt_omnes--solesmes}
+\begin{translation}
+  \mref{Ps.~97.~3, 4, 2}. All the ends of the earth have seen the salvation of
+  our God: sing joyfully to God, all the earth. \Vbar{}. The Lord hath made
+  known His salvation: He hath revealed His justice in the sight of the
+  Gentiles.
+\end{translation}
 
-\textbf{Ps.~97.~3, 4, 2}. All the ends of the earth have seen the salvation of
-our God: sing joyfully to God, all the earth. \Vbar{}. The Lord hath made known
-His salvation: He hath revealed His justice in the sight of the Gentiles.
-
-\vskip10pt
+\pagebreak
 
 \gregorioscore{al--dies_sanctificatus--solesmes}
+\begin{translation}
+  A sanctified day hath shown upon us: come ye Gentiles and adore the Lord: for
+  this day a great light hath descended upon the earth.
+\end{translation}
 
-A sanctified day hath shown upon us: come ye Gentiles and adore the Lord: for
-this day a great light hath descended upon the earth.
+\begin{heading}Gospel: John 1.~1-14.\end{heading}
 
-\vskip10pt
-  
-\textsc{Gospel}. \textit{John 1.~1-14.} In the beginning was the Word, and the
-Word was with God, and the Word was God. The same was in the beginning with God.
-All things were made by him: and without him was made nothing that was made. In
-him was life, and the life was the light of men. And the light shineth in
-darkness, and the darkness did not comprehend it. There was a man sent from God,
-whose name was John. This man came for a witness, to give testimony of the
-light, that all men might believe through him. He was not the light, but was to
-give testimony of the light. That was the true light, which enlighteneth every
-man that cometh into this world. He was in the world, and the world was made by
-him, and the world knew him not. He came unto his own, and his own received him
-not. But as many as received him, he gave them power to be made the sons of God,
-to them that believe in his name. Who are born, not of blood, nor of the will of
-the flesh, nor of the will of man, but of God. And the Word was made flesh, and
-dwelt among us, (and we saw his glory, the glory as it were of the only begotten
-of the Father,) full of grace and truth.
+\begin{paracol}{2}
+  \noindent In principio erat Verbum, et Verbum erat apud Deum, et Deus erat
+  Verbum. Hoc erat in principio apud Deum. Omnia per ipsum facta sunt: et sine
+  ipso factum est nihil, quod factum est: in ipso vita erat, et vita erat lux
+  hominum: et lux in tenebris lucet, et tenebræ eam non comprehenderunt. Fuit
+  homo missus a Deo, cui nomen erat Ioannes. Hic venit in testimonium, ut
+  testimonium perhiberet de lumine, ut omnes crederent per illum. Non erat ille
+  lux, sed ut testimonium perhiberet de lumine. Erat lux vera, quæ illuminat
+  omnem hominem venientem in hunc mundum. In mundo erat, et mundus per ipsum
+  factus est, et mundus eum non cognovit. In propria venit, et sui eum non
+  receperunt. Quotquot autem receperunt eum, dedit eis potestatem filios Dei
+  fieri, his, qui credunt in nomine eius: qui non ex sanguinibus, neque ex
+  voluntate carnis, neque ex voluntate viri, sed ex Deo nati sunt. Et Verbum
+  caro factum est, et habitavit in nobis: et vidimus gloriam eius, gloriam quasi
+  Unigeniti a Patre, plenum gratiæ et veritatis.
 
-\vskip10pt
+  \switchcolumn
+
+  \noindent In the beginning was the Word, and the Word was with God, and the
+  Word was God. The same was in the beginning with God. All things were made by
+  him: and without him was made nothing that was made. In him was life, and the
+  life was the light of men. And the light shineth in darkness, and the darkness
+  did not comprehend it. There was a man sent from God, whose name was John.
+  This man came for a witness, to give testimony of the light, that all men
+  might believe through him. He was not the light, but was to give testimony of
+  the light. That was the true light, which enlighteneth every man that cometh
+  into this world. He was in the world, and the world was made by him, and the
+  world knew him not. He came unto his own, and his own received him not. But as
+  many as received him, he gave them power to be made the sons of God, to them
+  that believe in his name. Who are born, not of blood, nor of the will of the
+  flesh, nor of the will of man, but of God. And the Word was made flesh, and
+  dwelt among us, (and we saw his glory, the glory as it were of the only
+  begotten of the Father,) full of grace and truth.
+\end{paracol}
+
+\pagebreak
 
 \gregorioscore{of--tui_sunt_caeli--solesmes}
+\begin{translation}
+  \mref{Ps.~88.~12, 15}. Thine are the heavens, and Thine is the earth, the
+  world and the fulness thereof Thou hast founded: justice and judgment are the
+  preparation of Thy throne.
+\end{translation}
 
-\textbf{Ps.~88.~12, 15}. Thine are the heavens, and Thine is the earth, the
-world and the fulness thereof Thou hast founded: justice and judgment are the
-preparation of Thy throne.
+\begin{heading}Secret\end{heading}
 
-\vskip10pt
+\begin{paracol}{2}
+  \noindent Oblata, Domine, munera, nova Unigeniti tui Nativitate sanctifica:
+  nosque a peccatorum nostrorum maculis emunda.
 
-\textsc{Secret}. Sanctify, O Lord, the gifts offered to Thee, by the new birth
-of Thine only begotten Son: and cleanse us from the stains of our sins. Through
-the same Jesus Christ our Lord, Thy Son, who liveth and reigneth with Thee, in
-the unity of the Holy Spirit, God, through all ages of ages. Amen.
+  \switchcolumn
+
+  \noindent Sanctify, O Lord, the gifts offered to Thee, by the new birth of
+  Thine only begotten Son: and cleanse us from the stains of our sins.
+\end{paracol}
 
 \vskip10pt
 
 \gregorioscore{co--viderunt_omnes--solesmes}
+\begin{translation}
+  \mref{Ps.~97.~3}. All the ends of the earth have seen the salvation of our
+  God.
+\end{translation}
 
-\textbf{Ps.~97.~3}. All the ends of the earth have seen the salvation of our
-God.
+\begin{heading}Post-Communion\end{heading}
 
-\vskip10pt
+\begin{paracol}{2}
+  \noindent Præsta, quaesumus, omnipotens Deus: ut natus hodie Salvator mundi,
+  sicut divinæ nobis generationis est auctor; ita et immortalitatis sit ipse
+  largitor.
 
-\textsc{Post-Communion}. Grant, we beseech Thee, Almighty God, that as the
-Saviour of the world, born on this day, is the Author of our heavenly birth, so
-He may also be to us the Giver of immortality: Who liveth and reigneth with
-Thee, in the unity of the Holy Spirit, God, through all ages of ages. \Rbar{}.
-Amen.
+  \switchcolumn
+
+  \noindent Grant, we beseech Thee, Almighty God, that as the Saviour of the
+  world, born on this day, is the Author of our heavenly birth, so He may also
+  be to us the Giver of immortality.
+\end{paracol}
 
 \end{document}
