@@ -1,0 +1,188 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+% usual packages loading:
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
+\usepackage{fancyhdr}
+\usepackage{fullpage}
+\usepackage{scrextend}
+\usepackage{paracol}
+
+\newcommand{\mref}{\textbf}
+\newcommand{\vref}{\emph}
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textsc{In Festo Omnium Sanctorum}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
+\setlength{\headsep}{6pt}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}\begin{huge}
+  \textsc{In Festo Omnium Sanctorum}
+\end{huge}\end{center}
+
+\gregorioscore{in--gaudeamus_sanctorum_omnium--solesmes}
+\begin{translation}
+  \mref{Is.~61:10.} I will greatly rejoice in the Lord, and my soul shall be
+  joyful in my God: for he hath clothed me with the garments of salvation, and
+  with the robe of justice he hath covered me, as a bride adorned with her
+  jewels. \vref{Ps.~29:2.} I will extol thee, O Lord, for thou hast upheld me:
+  and hast not made my enemies to rejoice over me.
+\end{translation}
+
+\begin{center}\emph{Collect}\end{center}
+
+\setlength{\columnseprule}{0.2pt}
+\colseprulecolor{gray}
+
+\begin{paracol}{2}
+  \noindent Deus, qui per immaculatam Virginis Con\-cep\-ti\-o\-nem dignum
+  Filio tuo habitaculum præparasti: quaesumus; ut qui ex morte eiusdem Filii
+  tui prævisa, eam ab omni labe præservasti, nos quo\-que mundos eius
+  intercessione ad te pervenire concedas.
+
+  \switchcolumn
+
+  \noindent O God, who by the Immaculate Conception of the Virgin didst prepare
+  a fitting habitation for thy Son; grant, we beseech thee, that as thou
+  preservedst her from all stain through the death foreseen of the same thy Son,
+  so we too may through her intercession be purified and come to thee.
+\end{paracol}
+
+\begin{center}\emph{Lesson: Prov.~8:22-35.}\end{center}
+
+\begin{paracol}{2}
+  \noindent Dominus possedit me in initio viarum suarum, antequam quidquam
+  faceret a principio. Ab æ\-ter\-no ordinata sum, et ex antiquis, antequam 
+  terra fieret. Nondum erant abyssi et ego iam concepta eram: necdum fontes
+  aquarum eruperant: necdum montes gravi mole constiterant: an\-te colles ego
+  parturiebar: adhuc terram non fecerat, et flumina, et cardines orbis terræ.
+  Quando præparabat cælos, aderam: quando certa lege et gyro vallabat abyssos:
+  quando æthera firmabat sursum, et librabat fontes aquarum: quando circumdabat
+  mari terminum suum, et legem ponebat aquis, ne transirent fines suos; quando
+  appendebat fundamenta terræ. Cum eo eram cuncta componens: et delectabar per
+  singulos dies, ludens coram eo omni tempore, ludens in orbe terrarum, et
+  deliciæ meæ esse cum filiis hominum. Nunc ergo filii, audite me: Beati, qui
+  custodiunt vias meas. Audite disciplinam, et estote sapientes, et nolite
+  abiicere eam. Beatus homo qui audit me, et qui vigilat ad fores meas quotidie,
+  et observat ad postes ostii mei. Qui me invenerit, inveniet vitam, et hauriet
+  salutem a Domino.
+
+  \switchcolumn
+
+  \noindent The Lord possessed me in the beginning of his ways, before he made
+  anything, from the beginning. I was set up from eternity, and of old, before
+  the earth was made. The depths were not as yet, and I was already conceived;
+  neither had the fountains of waters as yet sprung out; the mountains with
+  their huge bulk had not as yet been established, before the hills I was
+  brought forth. He had not yet made the earth, nor the rivers, nor the poles
+  of the world. When he prepared the heavens, I was present; when with a
+  certain law and compass he enclosed the depths; when he established the sky
+  above, and poised the fountains of waters; when he compassed the sea with its
+  bounds, and set a law to the waters that they should not pass their limits;
+  when he balanced the foundations of the earth; I was with him, forming all
+  things, and was delighted every day, playing before him at all times, playing
+  in the world, and my delights were to be with the children of men. Now,
+  therefore, ye children, hear me: blessed art they that keep my ways. Hear
+  instruction, and be wise, and refuse it not. Blessed is the man that heareth
+  me, and that watcheth daily at my gates and waiteth at the posts of my doors.
+  He that shall find me shall find life, and shall have salvation from the Lord.
+\end{paracol}
+
+\vskip10pt
+
+\gregorioscore{gr--timete_dominum--solesmes}
+
+\begin{translation}
+  \mref{Jdt.~13:23.} Blessed art thou, O Virgin Mary, by the Lord the most
+  high God, above all women upon the earth. \Vbar{}. Thou art the glory of
+  Jerusalem, thou art the joy of Israel, thou art the honour of our people.
+\end{translation}
+
+\gregorioscore{al--venite_ad_me--solesmes}
+\begin{translation}
+  \mref{Cant.~4:7.} Thou art all fair, O Mary, and the stain of original sin is
+  not in thee.
+\end{translation}
+
+\begin{center}\emph{Gospel: Lk.~1:26-28.}\end{center}
+
+\begin{paracol}{2}
+  \noindent In illo tempore: Missus est Angelus Gabriel a Deo in civitatem
+  Galilaeæ, cui nomen Nazareth, ad Virginem desponsatam viro, cui nomen erat
+  Ioseph, de domo David, et nomen Virginis Maria. Et ingressus Angelus ad eam
+  dixit: Ave, gratia plena: Dominus tecum: benedicta tu in mu\-li\-e\-ri\-bus.
+
+  \switchcolumn
+
+  \noindent At that time: The Angel Gabriel was sent from God into a city of
+  Galilee, called Nazareth, to a virgin espoused to a man whose name was
+  Joseph, of the house of David; and the virgin's name was Mary. And the Angel
+  being come in, said unto her: Hail, full of grace, the Lord is with thee;
+  blessed art thou among women.
+\end{paracol}
+
+\vskip20pt
+
+\gregorioscore{of--justorum_animae--solesmes}
+\begin{translation}
+  \mref{Lk.~1:28.} Hail, Mary, full of grace: the Lord is with thee: blessed art
+  thou among women, alleluia.
+\end{translation}
+
+\pagebreak
+
+\begin{center}\emph{Secret}\end{center}
+
+\begin{paracol}{2}
+  \noindent Salutarem hostiam, quam in solemnitate Immaculatæ Conceptionis
+  beatæ Virginis Mariæ tibi Domine offerimus, suscipe et præsta: ut sicut illam,
+  tua gratia præveniente, ab omni labe immunem profitemur; ita eius
+  intercessione a culpis omnibus liberemur.
+
+  \switchcolumn
+
+  \noindent Receive, O Lord, the saving victim which we offer to thee in
+  the festival of the Immaculate Conception of the blessed Virgin Mary: and
+  grant that, even as we proclaim her to have been preserved by thy grace from
+  every stain, so may we be delivered, by her intercession, from all our sins.
+\end{paracol}
+
+\vskip10pt
+
+\gregorioscore{co--beati_mundo_corde--solesmes}
+\begin{translation}
+  Glorious things are told of thee, O Mary, for he who is mighty hath done great
+  things for thee.
+\end{translation}
+
+\begin{center}\emph{Postcommunion}\end{center}
+
+\begin{paracol}{2}
+  \noindent Sacramenta quæ sumpsimus, Domine Deus noster, illius in nobis
+  culpæ vulnera reparent; a qua Immaculatam beatæ Mariæ Conceptionem
+  singulariter præservasti.
+
+  \switchcolumn
+
+  \noindent May the sacraments which we have received, O Lord our God, heal in
+  us the wounds of that sin from which thou didst by a singular privilege
+  preserve the Immaculate Conception of the blessed Mary.
+\end{paracol}
+
+\end{document}
