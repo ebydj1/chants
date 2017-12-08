@@ -1,24 +1,38 @@
 % !TEX TS-program = lualatex
 % !TEX encoding = UTF-8
 
+% Put this in its own folder, with the chants that go with it
+% A fantastic collection of chants can be found at gregobase.selapa.net
+% I generally do these things:
+%   1) Proofread (quilismas aren'talways right)
+%      Put any corrections back in gregobase!!!
+%   2) Change the indentation to make it more easily readable
+%      Don't need to push these changes back to gregobase
+%      Don't go overboard, some spacing changes have been known to change the
+%        layout of the chant.
+%   3) Change the annotation to match the Liber Usualis
+
 \documentclass[11pt]{article} % use larger type; default would be 10pt
 
-% usual packages loading:
 \usepackage{fontspec}
 \usepackage{graphicx} % support the \includegraphics command and options
 \usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\geometry{letterpaper}
 \usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
 \usepackage{fancyhdr}
 \usepackage{fullpage}
 \usepackage{scrextend}
 \usepackage{paracol}
 
+% This defines a formatting type for all _m_ain _ref_erences
 \newcommand{\mref}{\textbf}
+% This defines a formatting type for all _v_erse _ref_erences
 \newcommand{\vref}{\emph}
+% This defines a constant environment for translations
 \newenvironment{translation}
   {\begin{addmargin}{20pt}}
   {\end{addmargin}}
+% This defines a constant environment for headings
 \newenvironment{heading}
   {\begin{center}\begin{em}}
   {\end{em}\end{center}}
@@ -32,6 +46,7 @@
 \setlength{\headsep}{6pt}
 \setlength{\columnseprule}{0.2pt}
 \colseprulecolor{gray}
+\grechangedim{annotationraise}{0pt}{scalable}
 
 \begin{document}
 
@@ -61,8 +76,8 @@
   bondage under the yoke of sin.
 \end{paracol}
 
-\begin{heading}Epistle: Hebr.~1.~1-12.\end{heading}
-  
+\begin{heading}Epistle: Hebr.~1:1-12.\end{heading}
+
 \begin{paracol}{2}
   \noindent Multifariam, multisque modis olim Deus loquens patribus in
   Prophetis: novissime diebus istis locutus est nobis in Filio, quem constituit
@@ -124,7 +139,7 @@
   this day a great light hath descended upon the earth.
 \end{translation}
 
-\begin{heading}Gospel: John 1.~1-14.\end{heading}
+\begin{heading}John 1:1-14.\end{heading}
 
 \begin{paracol}{2}
   \noindent In principio erat Verbum, et Verbum erat apud Deum, et Deus erat
@@ -190,7 +205,7 @@
   God.
 \end{translation}
 
-\begin{heading}Post-Communion\end{heading}
+\begin{heading}Postcommunion\end{heading}
 
 \begin{paracol}{2}
   \noindent Præsta, quaesumus, omnipotens Deus: ut natus hodie Salvator mundi,
