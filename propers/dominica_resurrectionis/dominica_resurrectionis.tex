@@ -1,31 +1,45 @@
 % !TEX TS-program = lualatex
 % !TEX encoding = UTF-8
 
-% This is a simple template for a LuaLaTeX document using gregorio scores.
-
 \documentclass[11pt]{article} % use larger type; default would be 10pt
 
-% usual packages loading:
 \usepackage{fontspec}
 \usepackage{graphicx} % support the \includegraphics command and options
 \usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper} % or letterpaper (US) or a5paper or....
+\geometry{letterpaper}
 \usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
-\usepackage{fullpage} % to reduce the margins
+\usepackage{fancyhdr}
+\usepackage{fullpage}
 \usepackage{scrextend}
-\usepackage{multicol}
+\usepackage{paracol}
 
+% This defines a formatting type for all _m_ain _ref_erences
 \newcommand{\mref}{\textbf}
+% This defines a formatting type for all _v_erse _ref_erences
 \newcommand{\vref}{\emph}
+% This defines a constant environment for translations
 \newenvironment{translation}
   {\begin{addmargin}{20pt}}
   {\end{addmargin}}
+% This defines a constant environment for headings
+\newenvironment{heading}
+  {\begin{center}\begin{em}}
+  {\end{em}\end{center}}
 
-% to change the font to something better, you can install the kpfonts package (if not already installed). To do so
-% go open the "TeX Live Manager" in the Menu Start->All Programs->TeX Live 2010
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textsc{Dominica Resurrectionis}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
+\setlength{\headsep}{6pt}
+\setlength{\columnseprule}{0.2pt}
+\colseprulecolor{gray}
+\grechangedim{annotationraise}{0pt}{scalable}
 
-% here we begin the document
 \begin{document}
+
+\thispagestyle{plain}
 
 \begin{center}\begin{huge}
   \textsc{DOMINICA RESURRECTIONIS}
@@ -33,45 +47,47 @@
 
 \gregorioscore{in--resurrexi--solesmes}
 \begin{translation}
-  \mref{Ps.~138.~18,~5,~6.} I arose, and am still with Thee, alleluia; Thou hast
+  \mref{Ps.~138:18, 5, 6.} I arose, and am still with Thee, alleluia; Thou hast
   laid Thy hand upon Me, alleluia; Thy knowledge is become wonderful, alleluia,
-  alleluia. \vref{Ps.~ibid.~1,~2.} Lord, Thou hast searched Me, and known Me;
+  alleluia. \vref{Ps.~138:1, 2.} Lord, Thou hast searched Me, and known Me;
   Thou knowest My sitting down and My rising up.
 \end{translation}
 
-\begin{center}\emph{Collect}\end{center}
+\begin{heading}Collect\end{heading}
 
-\begin{multicols}{2}
-  \noindent Deus, qui hodierna die per Unigenitum tuum, aeternitatis nobis
-  aditum devicta morte reserasti: vota nostra, quae praeveniendo aspiras,
+\begin{paracol}{2}
+  \noindent Deus, qui hodierna die per Unigenitum tuum, æternitatis nobis
+  aditum devicta morte reserasti: vota nostra, quæ præveniendo aspiras,
   etiam adjuvando prosequere.
 
-  \columnbreak
+  \switchcolumn
 
   \noindent O God, who, on this day, through Thine only-begotten Son, hast
   conquered death, and thrown open to us the gate of everlasting life, give
   effect by Thine aid to our desires, which Thou dost anticipate and inspire.
-\end{multicols}
+\end{paracol}
 
-\begin{center}\emph{Epistle:~1~Cor.~5.~7-8.}\end{center}
+\begin{heading}Epistle: 1.~Cor.~5:7-8.\end{heading}
 
-\begin{multicols}{2}
+\begin{paracol}{2}
   \noindent Expurgate vetus fermentum, ut sitis nova conspersio, sicut estis
   azymi. Etenim Pascha nostrum immolatus est Christus. Itaque epulemur: non in
-  fermento veteri, neque in fermento malitiae et nequitiae: sed in azymis
+  fermento veteri, neque in fermento malitiæ et nequitiæ: sed in azymis
   sinceritatis et veritatis.
 
-  \columnbreak
+  \switchcolumn
 
   \noindent Purge out the old leaven, that you may be a new paste, as you are
   unleavened. For Christ our pasch is sacrificed. Therefore let us feast, not
   with the old leaven, nor with the leaven of malice and wickedness; but with
   the unleavened bread of sincerity and truth.
-\end{multicols}
+\end{paracol}
+
+\pagebreak
 
 \gregorioscore{gr--haec_dies__confitemini--solesmes}
 \begin{translation}
-  \mref{Ps.~117.~24,~1.} This is the day which the Lord hath made: let us
+  \mref{Ps.~117:24, 1.} This is the day which the Lord hath made: let us
   rejoice and be glad in it. \Vbar{}. Give praise unto the Lord, for He is good:
   for His mercy endureth for ever.
 \end{translation}
@@ -80,11 +96,12 @@
 
 \gregorioscore{al--pascha_nostrum--solesmes}
 \begin{translation}
-  \mref{1~Cor.~5.~7.} Christ our Pasch is sacrificed.
+  \mref{1.~Cor.~5:7.} Christ our Pasch is sacrificed.
 \end{translation}
 
-Allelúia.~\emph{is not repeated, but the Sequence is then said :}
-\vskip10pt
+\pagebreak
+
+Allelúia.~\emph{is not repeated, but the Sequence is then said:}
 
 \gregorioscore{se--victimae_paschali--solesmes}
 
@@ -124,25 +141,23 @@ Allelúia.~\emph{is not repeated, but the Sequence is then said :}
   Victor King, pardon giving.
 \end{translation}
 
-\vskip10pt
-
 \pagebreak
 
-\begin{center}\emph{Gospel:~Mk.~16.~1-7.}\end{center}
+\begin{heading}Gospel: Mk.~16:1-7.\end{heading}
 
-\begin{multicols}{2}
+\begin{paracol}{2}
   \noindent Et cum transisset sabbatum, Maria Magdalene, et Maria Jacobi, et
   Salome emerunt aromata ut venientes ungerent Jesum. Et valde mane una
   sabbatorum, veniunt ad monumentum, orto jam sole. Et dicebant ad invicem:
   Quis revolvet nobis lapidem ab ostio monumenti? Et respicientes viderunt
   revolutum lapidem. Erat quippe magnus valde. Et introeuntes in monumentum
   viderunt juvenem sedentem in dextris, coopertum stola candida, et
-  obstupuerunt. Qui dicit illis: Nolite expavescere: Jesum quaeritis
+  obstupuerunt. Qui dicit illis: Nolite expavescere: Jesum quæritis
   Nazarenum, crucifixum: surrexit, non est hic, ecce locus ubi posuerunt eum.
-  Sed ite, dicite discipulis ejus, et Petro, quia praecedit vos in Galilaeam:
+  Sed ite, dicite discipulis ejus, et Petro, quia præcedit vos in Galilæam:
   ibi eum videbitis, sicut dixit vobis.
 
-  \columnbreak
+  \switchcolumn
 
   \noindent And when the sabbath was past, Mary Magdalen, and Mary the mother
   of James, and Salome, bought sweet spices, that coming, they might anoint
@@ -156,54 +171,54 @@ Allelúia.~\emph{is not repeated, but the Sequence is then said :}
   behold the place where they laid him. But go, tell his disciples and Peter
   that he goeth before you into Galilee; there you shall see him, as he told
   you.
-\end{multicols}
+\end{paracol}
 
 \vskip20pt
 
 \gregorioscore{of--terra_tremuit--solesmes}
 \begin{translation}
-  \mref{Ps.~95.~9,~10.} The earth trembled and was still when God arose in
+  \mref{Ps. 95:9, 10.} The earth trembled and was still when God arose in
   judgment, alleluia.
 \end{translation}
 
 \vskip10pt
 
-\begin{center}\emph{Secret}\end{center}
+\begin{heading}Secret\end{heading}
 
-\begin{multicols}{2}
-  \noindent Suscipe, quaesumus, Domine, preces populi tui, cum oblationibus
-  hostiarum: ut paschalibus initiata mysteriis, ad aeternitatis nobis medelam,
+\begin{paracol}{2}
+  \noindent Suscipe, quæsumus, Domine, preces populi tui, cum oblationibus
+  hostiarum: ut paschalibus initiata mysteriis, ad æternitatis nobis medelam,
   te operante, proficiant.
 
-  \columnbreak
+  \switchcolumn
 
   \noindent We beseech Thee, O Lord, accept the prayers of Thy people together
   with the Sacrifice they offer, that what has been begun by the Paschal
   Mysteries, may by Thy arrangement result in our eternal healing.
-\end{multicols}
+\end{paracol}
 
-\vskip10pt
+\pagebreak
 
 \gregorioscore{co--pascha_nostrum--solesmes}
 \begin{translation}
-  \mref{1~Cor.~5.~7,~8.} Christ our Pasch is sacrificed, alleluia: therefore
+  \mref{1.~Cor.~5:7, 8.} Christ our Pasch is sacrificed, alleluia: therefore
   let us feast with the unleavened bread of sincerity and truth, alleluia,
   alleluia, alleluia.
 \end{translation}
 
 \vskip10pt
 
-\begin{center}\emph{Postcommunion}\end{center}
+\begin{heading}Postcommunion\end{heading}
 
-\begin{multicols}{2}
-  \noindent Spiritum nobis, Domine, tuae caritatis infunde: ut, quos
+\begin{paracol}{2}
+  \noindent Spiritum nobis, Domine, tuæ caritatis infunde: ut, quos
   sacramentis paschalibus satiasti, tu facias pietate concordes.
 
-  \columnbreak
+  \switchcolumn
 
   \noindent Pour forth upon us, O Lord, the spirit of Thy love, that those
   whose hunger Thou hast satisfied with the Sacraments of Easter may in Thy
   kindness be one in heart.
-\end{multicols}
+\end{paracol}
 
 \end{document}
