@@ -1,0 +1,189 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
+\usepackage{fancyhdr}
+\usepackage{fullpage}
+\usepackage{scrextend}
+\usepackage{paracol}
+
+% This defines a formatting type for all _m_ain _ref_erences
+\newcommand{\mref}{\textbf}
+% This defines a formatting type for all _v_erse _ref_erences
+\newcommand{\vref}{\emph}
+% This defines a constant environment for translations
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
+% This defines a constant environment for headings
+\newenvironment{heading}
+  {\begin{center}\begin{em}}
+  {\end{em}\end{center}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textsc{Pro Sponso et Sponsa}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
+\setlength{\headsep}{6pt}
+\setlength{\columnseprule}{0.2pt}
+\colseprulecolor{gray}
+\grechangedim{annotationraise}{0pt}{scalable}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}\begin{huge}
+  \textsc{Pro Sponso et Sponsa}
+\end{huge}\end{center}
+
+\gregorioscore{in--deus_israel--solesmes}
+\begin{translation}
+  \mref{Tob.~7:15, 8:19.} May the God of Israel join you together, and may he be
+  with you, who was merciful to two only children: and now, O Lord, make them
+  bless thee more fully. \vref{Ps.~127:1.} Blessed are all they that fear the
+  Lord, that walk in his ways.
+\end{translation}
+
+\begin{heading}Collect\end{heading}
+
+\begin{paracol}{2}
+  \noindent Exaudi nos, omnipotens et misericors Deus: ut, quod nostro
+  ministratur officio, tua benedictione potius impleatur.
+
+  \switchcolumn
+
+  \noindent Hear us, almighty and merciful God: that what is performed by our
+  ministry, may be abundantly fulfilled with thy blessing.
+\end{paracol}
+
+\begin{heading}Epistle: Eph.~5:22-33.\end{heading}
+
+\begin{paracol}{2}
+  \noindent Fratres: Mulieres viris suis subditæ sint, sicut Domino: quoniam vir
+  caput est mulieris, sicut Christus caput est Ecclesiæ: ipse, salvator corporis
+  ejus.  Sed sicut Ecclesia subjecta est Chris\-to, ita et mulieres viris suis
+  in omnibus.
+  
+  Viri, diligite uxores vestras, sicut et Christus dilexit Ecclesiam, et seipsum
+  tradidit pro ea, ut illam sanctificaret, mundans lavacro aquæ in verbo vitæ,
+  ut exhiberet ipse sibi gloriosam Ecclesiam, non habentem maculam, aut rugam,
+  aut aliquid hujusmodi, sed ut sit sancta et immaculata. Ita et viri debent
+  diligere uxores suas ut corpora sua. Qui suam uxorem diligit, seipsum diligit.
+  Nemo enim umquam carnem suam odio habuit: sed nutrit et fovet eam, sicut et
+  Christus Ecclesiam: quia membra sumus corporis ejus, de carne ejus et de
+  ossibus ejus.  Propter hoc relinquet homo patrem et matrem suam, et adhærebit
+  uxori suæe, et erunt duo in carne una. Sacramentum hoc magnum est, ego autem
+  dico in Christo et in Ecclesia.
+  
+  Verumtamen et vos singuli, unusquisque uxorem suam sicut seipsum diligat: uxor
+  autem timeat virum suum. 
+
+  \switchcolumn
+
+  \noindent Brethren: Let women be subject to their husbands, as to the Lord:
+  Because the husband is the head of the wife, as Christ is the head of the
+  church. He is the saviour of his body. Therefore as the church is subject to
+  Christ, so also let the wives be to their husbands in all things.
+  
+  Husbands, love your wives, as Christ also loved the church, and delivered
+  himself up for it: That he might sanctify it, cleansing it by the laver of
+  water in the word of life: That he might present it to himself a glorious
+  church, not having spot or wrinkle, or any such thing; but that it should be
+  holy, and without blemish. So also ought men to love their wives as their own
+  bodies. He that loveth his wife, loveth himself. For no man ever hated his own
+  flesh; but nourisheth and cherisheth it, as also Christ doth the church:
+  Because we are members of his body, of his flesh, and of his bones. For this
+  cause shall a man leave his father and mother, and shall cleave to his wife,
+  and they shall be two in one flesh. This is a great sacrament; but I speak in
+  Christ and in the church.
+  
+  Nevertheless let every one of you in particular love his wife as himself: and
+  let the wife fear her husband. 
+\end{paracol}
+
+\vskip10pt
+
+\gregorioscore{gr--uxor_tua--solesmes}
+\begin{translation}
+  \mref{Ps.~127:3.} Thy wife shall be as a fruitful vine on the sides of thy
+  house. \Vbar{}. Thy children as olive plants round about thy table.
+\end{translation}
+
+\vskip10pt
+
+\gregorioscore{al--mittat_vobis--solesmes}
+\begin{translation}
+  \mref{Mt.~11:28.} Come to me all you that labour and are heavy laden, and I
+  will refresh you.
+\end{translation}
+
+\pagebreak
+
+\begin{heading}Gospel: Mt.~19:3-6.\end{heading}
+
+\begin{paracol}{2}
+  \noindent In illo tempore: Accesserunt ad eum pharisæi tentantes eum, et
+  dicentes: Si licet homini dimittere uxorem suam, quacumque ex causa? Qui
+  respondens, ait eis: Non legistis, quia qui fecit hominem ab initio, masculum
+  et feminam fecit eos? Et dixit: Propter hoc dimittet homo patrem, et matrem,
+  et adhærebit uxori suæ, et erunt duo in carne una. Itaque jam non sunt duo,
+  sed una caro. Quod ergo Deus conjunxit, homo non separet. 
+
+  \switchcolumn
+
+  \noindent At that time: There came to him the Pharisees tempting him, and
+  saying: Is it lawful for a man to put away his wife for every cause? Who
+  answering, said to them: Have ye not read, that he who made man from the
+  beginning, made them male and female? And he said: For this cause shall a man
+  leave father and mother, and shall cleave to his wife, and they two shall be
+  in one flesh. Therefore now they are not two, but one flesh. What therefore
+  God hath joined together, let no man put asunder. 
+\end{paracol}
+
+\gregorioscore{of--in_te_speravi--solesmes}
+\begin{translation}
+  \mref{Ps.~30:15-16.} In thee, O Lord, have I hoped: I said: Thou art my God,
+  my times are in thy hands.
+\end{translation}
+
+\begin{heading}Secret\end{heading}
+
+\begin{paracol}{2}
+  \noindent Suscipe, quæsumus, Domine, pro sacra connubii lege munus oblatum:
+  et cujus largitor es operis, esto dispositor.
+
+  \switchcolumn
+
+  \noindent Accept, we beseech thee, O Lord, the gifts offered for the sacred
+  law of marriage: and do thou direct the work which thou didst establish.
+\end{paracol}
+
+\gregorioscore{co--ecce_sic_benedicetur--solesmes}
+\begin{translation}
+  \mref{Ps.~127:4-6.} Behold, thus shall every man be blessed that feareth the
+  Lord; and mayest thou see thy children's children; peace upon Israel.
+\end{translation}
+
+\begin{heading}Postcommunion\end{heading}
+
+\begin{paracol}{2}
+  \noindent Quæsumus, omnipotens Deus: instituta providentiæ tuæ pio favore
+  comitare; ut quos legitima societate connectis, longæva pace custodias.
+
+  \switchcolumn
+
+  \noindent We beseech thee, almighty God, to accompany with thy gracious favour
+  the institution of thy providence, and keep in lasting peace those whom thou
+  dost join in lawful union.
+\end{paracol}
+
+\end{document}
