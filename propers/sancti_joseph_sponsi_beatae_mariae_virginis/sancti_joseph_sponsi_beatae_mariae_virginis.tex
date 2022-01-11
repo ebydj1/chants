@@ -1,0 +1,219 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+% Put this in its own folder, with the chants that go with it
+% A fantastic collection of chants can be found at gregobase.selapa.net
+% I generally do these things:
+%   1) Proofread (quilismas aren't always right)
+%      Put any corrections back in gregobase!!!
+%   2) Change the indentation to make it more easily readable
+%      Don't need to push these changes back to gregobase
+%      Don't go overboard, some spacing changes have been known to change the
+%        layout of the chant.
+%   3) Change the annotation to match the Liber Usualis
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage{fontspec}
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}
+\usepackage[autocompile]{gregoriotex} % for gregorio score inclusion
+\usepackage{fancyhdr}
+\usepackage{fullpage}
+\usepackage{scrextend}
+\usepackage{paracol}
+
+% This defines a formatting type for all _m_ain _ref_erences
+\newcommand{\mref}{\textbf}
+% This defines a formatting type for all _v_erse _ref_erences
+\newcommand{\vref}{\emph}
+% This defines a constant environment for translations
+\newenvironment{translation}
+  {\begin{addmargin}{20pt}}
+  {\end{addmargin}}
+% This defines a constant environment for headings
+\newenvironment{heading}
+  {\begin{center}\begin{em}}
+  {\end{em}\end{center}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\textsc{S. Joseph, Sponsi B.M.V.}}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
+\setlength{\headsep}{6pt}
+\setlength{\columnseprule}{0.2pt}
+\colseprulecolor{gray}
+\grechangedim{annotationraise}{0pt}{scalable}
+\gresetlinecolor{gregoriocolor}
+\input RoyalIn.fd
+\newcommand*\initfamily{\fontsize{100}{100}\usefont{U}{RoyalIn}{xl}{n}}
+\gresetmodenumbersystem{roman-majuscule}
+
+\begin{document}
+
+\thispagestyle{plain}
+
+\begin{center}\begin{huge}
+  \textsc{Sancti Joseph}
+\end{huge}\end{center}
+
+\begin{center}\begin{large}
+  \textsc{Sponsi Beatæ Mariæ Virginis}
+\end{large}\end{center}
+
+\begin{center}\begin{large}
+  \textsc{Confessoris et Ecclesiæ Universalis Patroni}
+\end{large}\end{center}
+
+\begin{heading}Introit\end{heading}
+
+\gresetinitiallines{2}
+\grechangestyle{initial}{\initfamily}
+\gregorioscore{in--justus_ut_palma--solesmes}
+\grechangestyle{initial}{\fontsize{40}{40}\selectfont}
+\gresetinitiallines{1}
+\begin{translation}
+  \mref{Ps.~91:13-14.} The just shall flourish like the palm tree: he shall grow
+  up like the cedar of Libanus: planted in the house of the Lord, in the courts
+  of the house of our God. \vref{Ps.~91:2.} It is good to give praise to the
+  Lord: and to sing to Thy name, O Most High.
+\end{translation}
+
+\begin{heading}Collect\end{heading}
+
+\begin{paracol}{2}
+  % Sometimes it's necessary to hyphenate manually, particularly with these
+  % short columns. That said, apparently LaTeX knows how to hyphenate Latin
+  % pretty well out of the box, which is pretty awesome.
+  \noindent Sanctissimæ Genitricis tuæ Sponsi, quæsumus, Domine, meritis
+  adjuvemur: ut, quod possibilitas nostra non obtinet, ejus nobis intercessione
+  donetur.
+
+  \switchcolumn
+
+  \noindent We beseech Thee, O Lord, that we may be helped by the merits of the
+  Spouse of Thy Most Holy Mother: so that what we cannot obtain of ourselves,
+  may be given to us through his intercession.
+\end{paracol}
+
+\pagebreak
+
+\begin{heading}Lesson: Ecclus.~45:1-6.\end{heading}
+
+\begin{paracol}{2}
+  \noindent
+  Dilectus Deo et hominibus, cujus memoria in benedictione est. Similem illum
+  fecit in gloria sanctorum, et magnificavit eum in timore inimicorum, et in
+  verbis suis monstra placavit. Glorificavit illum in conspectu regum, et jussit
+  illi coram populo suo, et ostendit illi gloriam suam. In fide et lenitate
+  ipsius, sanctum fecit illum, et elegit eum ex omni carne. Audivit enim eum, et
+  vocem ipsius, et induxit illum in nubem. Et dedit illi coram præcepta, et
+  legem vitæ et disciplinæ.
+
+  \switchcolumn
+
+  \noindent Beloved of God and men, whose memory is in benediction. He made him
+  like the Saints in glory, and magnified him in the fear of his enemies, and
+  with his words he made prodigies to cease. He glorified him in the sight of
+  kings, and gave him commandments in the sight of his people, and showed him
+  His glory. He sanctified him in his faith and meekness, and chose him out of
+  all flesh. For He heard him and his voice, and brought him into a cloud. And
+  He gave him commandment before His face, and a law of life and instruction.
+\end{paracol}
+
+\begin{heading}Gradual\end{heading}
+
+\gregorioscore{gr--domine_praevenisti--solesmes}
+\begin{translation}
+  % The Vbar thing is a GregorioTeX feature for Verse bars.
+  \mref{Ps.~20:4-5.} Lord, Thou hast prevented him with blessings of sweetness:
+  Thou hast set on his head a crown of precious stones. \Vbar{}. He asked life
+  of Thee, and Thou hast given him length of days for ever and ever.
+\end{translation}
+
+\pagebreak
+
+\begin{heading}Tract\end{heading}
+
+\gregorioscore{tr--beatus_vir--solesmes}
+\begin{translation}
+  \mref{Ps.~111:1, 3.} Blessed is the man that feareth the Lord: he shall
+  delight exceedingly in His commandments. \Vbar{}. His seed shall be mighty
+  upon earth: the generation of the righteous shall be blessed. \Vbar{}. Glory
+  and wealth shall be in his house: and his justice remaineth for ever and ever.
+\end{translation}
+
+\begin{heading}Gospel: Mt.~1:18-21.\end{heading}
+
+\begin{samepage}
+\begin{paracol}{2}
+  \noindent Cum esset desponsata mater Jesu Maria Joseph, antequam convenirent,
+  inventa est in utero ha\-bens de Spiritu Sancto. Joseph autem vir ejus, cum
+  esset justus, et nollet eam traducere, voluit occulte dimittere eam. Hæc
+  autem eo cogitante, ecce Angelus Domini apparuit in somnis ei, dicens: Joseph,
+  fili David, noli timere accipere Ma\-ri\-am conjugem tuam: quod enim in ea
+  natum est, de Spiritu Sancto est. Pariet autem filium, et vocabis nomen ejus
+  Jesum: ipse enim salvum faciet populum suum a peccatis eorum.
+
+  \switchcolumn
+
+  \noindent When Mary the mother of Jesus was espoused to Joseph, before they
+  came together, she was found with child of the Holy Ghost. Whereupon Joseph
+  her husband, being a just man and not willing publicly to expose her, was
+  minded to put her away privately. But while he thought on these things, behold
+  the Angel of the Lord appeared to him in his sleep, saying: Joseph, son of
+  David, fear not to take unto thee Mary thy wife: for that which is conceived
+  in her is of the Holy Ghost. And she shall bring forth a Son, and thou shalt
+  call His Name Jesus: for He shall save His people from their sins.
+\end{paracol}
+\end{samepage}
+
+\begin{heading}Offertory\end{heading}
+
+\gregorioscore{of--veritas_mea--solesmes}
+\begin{translation}
+  \mref{Ps.~88:25.} My truth and My mercy shall be with him: and in My name
+  shall his horn be exalted.
+\end{translation}
+
+\begin{heading}Secret\end{heading}
+
+\begin{paracol}{2}
+  \noindent Debitum tibi, Domine, nostræ reddimus servitutis, suppliciter
+  exorantes: ut, suffragiis beati Joseph, Sponsi Genetricis Filii tui Jesu
+  Christi Domini nostri, in nobis tua munera tuearis, ob cujus venerandam
+  festivitatem laudis tibi hostias immolamus.
+
+  \switchcolumn
+
+  \noindent We render unto Thee, O Lord, the duty of our service, humbly
+  entreating Thee to preserve \linebreak Thine own gifts within us through the
+  prayers of blessed Joseph, Spouse of the Mother of Thy Son Jesus Christ our
+  Lord, on whose holy festival we offer to Thee this sacrifice of praise.
+\end{paracol}
+
+\begin{heading}Communion\end{heading}
+
+\gregorioscore{co--joseph_fili_david--solesmes}
+\begin{translation}
+  \mref{Mt.~5:20.} Joseph, son of David, fear not to take unto thee Mary thy
+  wife: for that which is born in her is of the Holy Ghost.
+\end{translation}
+
+\begin{heading}Postcommunion\end{heading}
+
+\begin{paracol}{2}
+  \noindent Adesto nobis, quæsumus, misericors Deus: et, intercedente pro nobis
+  beato Joseph Confessore, tua circa nos propitiatus dona custodi.
+
+  \switchcolumn
+
+  \noindent Stand by us, we beseech Thee, O merciful God, and by the
+  intercession of blessed Joseph, the Confessor, mercifully preserve Thy gifts
+  within us.
+\end{paracol}
+
+\end{document}
