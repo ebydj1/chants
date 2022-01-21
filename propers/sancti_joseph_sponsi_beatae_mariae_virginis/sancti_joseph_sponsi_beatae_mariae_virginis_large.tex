@@ -37,6 +37,7 @@
 \setlength{\columnseprule}{0.2pt}
 \colseprulecolor{gray}
 \grechangedim{annotationraise}{0pt}{scalable}
+\grechangedim{spacebeneathtext}{0.2cm}{scalable}
 \gresetlinecolor{gregoriocolor}
 \input RoyalIn.fd
 \newcommand*\initfamily{\fontsize{100}{100}\usefont{U}{RoyalIn}{xl}{n}}
@@ -115,12 +116,16 @@
 %\begin{heading}Gradual\end{heading}
 
 \gregorioscore{gr--domine_praevenisti--solesmes}
-\begin{translation}
+%\begin{translation}
+\begin{addmargin}{10pt}
   % The Vbar thing is a GregorioTeX feature for Verse bars.
+  \small{
   \mref{Ps.~20:4-5.} Lord, Thou hast prevented him with blessings of sweetness:
   Thou hast set on his head a crown of precious stones. \Vbar{}. He asked life
   of Thee, and Thou hast given him length of days for ever and ever.
-\end{translation}
+  }
+\end{addmargin}
+%\end{translation}
 
 \pagebreak
 
